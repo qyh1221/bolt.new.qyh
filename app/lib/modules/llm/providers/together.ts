@@ -31,6 +31,12 @@ export default class TogetherProvider extends BaseProvider {
       provider: 'Together',
       maxTokenAllowed: 8192,
     },
+    {
+      name: 'claude-3-5-sonnet-20241022',
+      label: 'claude-3-5-sonnet-20241022',
+      provider: 'anthropic',
+      maxTokenAllowed: 1024,
+    },
   ];
 
   async getDynamicModels(
@@ -45,7 +51,11 @@ export default class TogetherProvider extends BaseProvider {
       defaultBaseUrlKey: 'TOGETHER_API_BASE_URL',
       defaultApiTokenKey: 'TOGETHER_API_KEY',
     });
-    const baseUrl = fetchBaseUrl || 'https://api.together.xyz/v1';
+    // const baseUrl = fetchBaseUrl || 'https://api.together.xyz/v1';
+    const baseUrl = fetchBaseUrl || 'https://api.openai99.top';
+
+
+    
 
     if (!baseUrl || !apiKey) {
       return [];
