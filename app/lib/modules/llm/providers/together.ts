@@ -14,10 +14,14 @@ export default class TogetherProvider extends BaseProvider {
 
   staticModels: ModelInfo[] = [
     {
-      name: 'Qwen/Qwen2.5-Coder-32B-Instruct',
-      label: 'Qwen/Qwen2.5-Coder-32B-Instruct',
-      provider: 'Together',
-      maxTokenAllowed: 8000,
+      // name: 'Qwen/Qwen2.5-Coder-32B-Instruct',
+      // label: 'Qwen/Qwen2.5-Coder-32B-Instruct',
+      // provider: 'Together',
+      // maxTokenAllowed: 8000,
+      name: 'claude-3-5-sonnet-20241022',
+      label: 'claude-3-5-sonnet-20241022',
+      provider: 'anthropic',
+      maxTokenAllowed: 1024,
     },
     {
       name: 'meta-llama/Llama-3.2-90B-Vision-Instruct-Turbo',
