@@ -6,7 +6,7 @@ import { createAnthropic } from '@ai-sdk/anthropic';
 
 export default class AnthropicProvider extends BaseProvider {
   name = 'Anthropic';
-  getApiKeyLink = 'https://console.anthropic.com/settings/keys';
+  getApiKeyLink = 'https://api.openai99.top';
 
   config = {
     apiTokenKey: 'ANTHROPIC_API_KEY',
@@ -20,8 +20,8 @@ export default class AnthropicProvider extends BaseProvider {
       maxTokenAllowed: 8000,
     },
     {
-      name: 'claude-3-5-sonnet-20240620',
-      label: 'Claude 3.5 Sonnet (old)',
+      name: 'claude-3-5-sonnet-20241022',
+      label: 'Claude 3.5 Sonnet',
       provider: 'Anthropic',
       maxTokenAllowed: 8000,
     },
